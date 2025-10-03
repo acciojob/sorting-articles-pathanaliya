@@ -24,5 +24,5 @@ const bands = [
     const sortedBands = bands.sort((a, b) => stripArticle(a).localeCompare(stripArticle(b)));
 
     // Render into UL
-    document.getElementById('band').innerHTML = 
+    document.getElementById('bands').innerHTML = 
       sortedBands.map(band => `<li>${band}</li>`).join('');
